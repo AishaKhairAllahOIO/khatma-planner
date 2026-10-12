@@ -1,0 +1,38 @@
+:root {
+  --ground: #f6f4ee;
+  --surface: #ffffff;
+  --ink: #26332e;
+  --muted: #5f6b64;
+  --line: #e8e4d9;
+  --track: #efede5;
+
+  --mint-bg: #d8ebdd;
+  --mint-2: #b3dbc0;
+  --mint-3: #8cc5a0;
+  --mint-deep: #1e4b38;
+  --mint-ink: #143828;
+
+  --sky-bg: #d9e8f4;
+  --sky-ink: #1b3f5c;
+  --sky-arc: #2f6a96;
+
+  --butter-bg: #fbedc9;
+  --butter-ink: #5a4410;
+  --butter-strong: #3d2e08;
+
+  --rose-bg: #f8dcd7;
+  --rose-ink: #6a2a22;
+  --rose-strong: #4a1a14;
+
+  --lav-bg: #e6def2;
+  --lav-ink: #3f2e63;
+  --lav-strong: #2a1d47;
+  --lav-line: #d3c8e6;
+
+  --future-bg: #f1efe7;
+  --future-ink: #7d867f;
+  --missed-bg: #eae7dc;
+
+  --font-display: 'Amiri', serif;
+  --font-body: 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}

@@ -1,0 +1,126 @@
+.calendar-card {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px 28px 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.calendar-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.calendar-card__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.calendar-card__hint {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.heat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.heat-cell {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 14px;
+}
+
+.heat-cell__day {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.heat-cell__pages {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heat-cell--partial {
+  background: var(--mint-bg);
+  color: var(--mint-deep);
+}
+.heat-cell--done {
+  background: var(--mint-2);
+  color: var(--mint-deep);
+}
+.heat-cell--strong {
+  background: var(--mint-3);
+  color: var(--mint-ink);
+}
+.heat-cell--today {
+  border: 2px solid var(--mint-deep);
+  background: #ffffff;
+  color: var(--mint-deep);
+}
+.heat-cell--future {
+  background: var(--future-bg);
+  color: var(--future-ink);
+}
+.heat-cell--missed {
+  background: var(--missed-bg);
+  color: var(--muted);
+}
+
+.heat-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.heat-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heat-legend__swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .calendar-card {
+    gap: 14px;
+    padding: 18px 16px 20px;
+    border-radius: 20px;
+  }
+
+  .calendar-card__title {
+    font-size: 20px;
+  }
+
+  .heat-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .heat-cell {
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,18 @@
+.history {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
+.history h2 { font-size: 20px; }
+.history__empty { margin-top: 12px; color: var(--muted); }
+.history__list { list-style: none; padding: 0; margin: 16px 0 0; }
+.history__record { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0; }
+.history__record + .history__record { border-top: 1px solid var(--line); }
+.history__record h3 { margin: 0 0 4px; font-size: 16px; }
+.history__record p { font-size: 14px; color: var(--muted); }
+.history__record > span { flex-shrink: 0; color: var(--mint-deep); }
+@media (max-width: 480px) {
+  .history { padding: 18px; }
+  .history__record { align-items: flex-start; flex-direction: column; }
+}

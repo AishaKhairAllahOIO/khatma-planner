@@ -1,0 +1,93 @@
+.juz-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 28px 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--surface);
+}
+
+.juz-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.juz-card__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.juz-card__summary {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.juz-grid {
+  display: grid;
+  grid-template-columns: repeat(30, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.juz-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--track);
+  overflow: hidden;
+}
+
+.juz-cell__fill {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  background: var(--mint-2);
+  transition: width 0.3s;
+}
+
+.juz-cell__num {
+  position: relative;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.juz-cell__num--filled {
+  color: var(--mint-ink);
+}
+
+@media (max-width: 767px) {
+  .juz-card {
+    gap: 10px;
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .juz-card__title {
+    font-size: 18px;
+  }
+
+  .juz-card__summary {
+    font-size: 12px;
+  }
+
+  .juz-grid {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+
+  .juz-cell {
+    height: 26px;
+    border-radius: 8px;
+  }
+
+  .juz-cell__num {
+    font-size: 11px;
+  }
+}

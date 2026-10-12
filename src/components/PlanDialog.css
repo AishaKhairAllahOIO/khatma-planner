@@ -1,0 +1,46 @@
+.dialog {
+  width: min(420px, calc(100% - 40px));
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.dialog::backdrop {
+  background: rgb(38 51 46 / 0.4);
+}
+
+.dialog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+}
+
+.dialog__title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.dialog__hint {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.dialog__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.dialog__danger {
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--rose-bg);
+  color: var(--rose-ink);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

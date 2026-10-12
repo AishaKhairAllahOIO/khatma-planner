@@ -1,0 +1,30 @@
+.app {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 28px 32px 56px;
+}
+
+.app__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .app {
+    
+    padding: 16px 20px calc(32px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .app__inner {
+    gap: 14px;
+  }
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

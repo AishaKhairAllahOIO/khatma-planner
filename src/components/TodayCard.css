@@ -1,0 +1,162 @@
+.today-card {
+  flex: 999 1 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px;
+  border-radius: 28px;
+  background: var(--mint-bg);
+  color: var(--mint-deep);
+}
+
+.today-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.today-card__chip {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.today-card__mushaf {
+  font-size: 14px;
+}
+
+.today-card__amount {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.today-card__number {
+  font-family: var(--font-display);
+  font-size: 112px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.today-card__unit {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.today-card__text {
+  font-size: 17px;
+}
+
+.today-card__done-title {
+  font-family: var(--font-display);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.progress {
+  height: 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.progress__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--mint-deep);
+  transition: width 0.3s;
+}
+
+.today-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.today-card__position {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.today-card__position > svg {
+  flex: none;
+  color: var(--mint-deep);
+}
+
+.today-card__position-label {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.today-card__position-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .today-card {
+    gap: 12px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .today-card__chip {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+
+  .today-card__number {
+    font-size: 72px;
+  }
+
+  .today-card__unit {
+    font-size: 22px;
+  }
+
+  .today-card__text {
+    font-size: 15px;
+  }
+
+  .today-card__done-title {
+    font-size: 40px;
+  }
+
+  .progress {
+    height: 12px;
+  }
+
+  .today-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .today-card__actions .btn {
+    width: 100%;
+  }
+
+  .today-card__actions .btn--primary {
+    min-height: 52px;
+  }
+
+  .today-card__actions .btn--white {
+    min-height: 48px;
+    font-size: 15px;
+  }
+
+  .today-card__actions .btn--ghost {
+    min-height: 44px;
+  }
+}
